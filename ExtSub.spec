@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Multimedia
 Source0:	http://sites.inka.de/risctaker/VOBSub/%{name}.tgz
+# Source0-md5:	430edb8011e4a921aae8a1769ac98f36
 URL:		http://sites.inka.de/risctaker/VOBSub/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
