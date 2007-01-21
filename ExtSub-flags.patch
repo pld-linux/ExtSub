@@ -1,0 +1,28 @@
+--- ExtSub.orig/Makefile	2007-01-21 18:30:19.000000000 +0100
++++ ExtSub/Makefile	2007-01-21 18:31:22.000000000 +0100
+@@ -7,20 +7,20 @@
+ 
+ 
+ ExtSub:		subproc.o dfsa2.o argdefs.o syntax.o globdefs.h
+-		gcc -Wall -o ExtSub main.c subproc.o dfsa2.o argdefs.o syntax.o
++		$(CC) $(FLAGS) -Wall -o ExtSub main.c subproc.o dfsa2.o argdefs.o syntax.o
+                 
+ subproc.o:	subproc.c subproc.h
+-		gcc -c -Wall -o subproc.o subproc.c
++		$(CC) $(FLAGS) -c -Wall -o subproc.o subproc.c
+ 
+ dfsa2.o:	dfsa2.c dfsa2.h
+-		gcc -c -Wall -o dfsa2.o dfsa2.c
++		$(CC) $(FLAGS) -c -Wall -o dfsa2.o dfsa2.c
+ 
+ 
+ argdefs.o:	argdefs.c argdefs.h
+-		gcc -c -Wall -o argdefs.o argdefs.c
++		$(CC) $(FLAGS) -c -Wall -o argdefs.o argdefs.c
+ 
+ syntax.o:	syntax.c syntax.h
+-		gcc -c -Wall -o syntax.o syntax.c
++		$(CC) $(FLAGS) -c -Wall -o syntax.o syntax.c
+ 
+ clean:	
+ 	-rm $(FILES) *.o
