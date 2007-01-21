@@ -8,6 +8,7 @@ Group:		Applications/Multimedia
 Source0:	http://sites.inka.de/risctaker/VOBSub/%{name}.tgz
 # Source0-md5:	430edb8011e4a921aae8a1769ac98f36
 URL:		http://sites.inka.de/risctaker/VOBSub/
+Patch0:		%{name}-flags.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -18,9 +19,12 @@ Wyodrêbnianie napisów z VOBów.
 
 %prep
 %setup -q -n %{name}
+%patch0 -p1
 
 %build
-%{__make}
+%{__make} \
+	CC="%{__cc}" \
+	FLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
