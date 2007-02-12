@@ -1,5 +1,5 @@
 Summary:	Substract subtitles from VOBs
-Summary(pl.UTF-8):   Wyodrębnianie napisów z VOBów
+Summary(pl.UTF-8):	Wyodrębnianie napisów z VOBów
 Name:		ExtSub
 Version:	0.1
 Release:	1
