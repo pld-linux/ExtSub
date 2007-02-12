@@ -1,5 +1,5 @@
 Summary:	Substract subtitles from VOBs
-Summary(pl):	Wyodr阞nianie napis體 z VOB體
+Summary(pl.UTF-8):   Wyodr臋bnianie napis贸w z VOB贸w
 Name:		ExtSub
 Version:	0.1
 Release:	1
@@ -14,8 +14,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Substract subtitles from VOBs.
 
-%description -l pl
-Wyodr阞nianie napis體 z VOB體.
+%description -l pl.UTF-8
+Wyodr臋bnianie napis贸w z VOB贸w.
 
 %prep
 %setup -q -n %{name}
